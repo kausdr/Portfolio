@@ -7,21 +7,71 @@
   /*Cores*/
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
-  --text-color: #333;
+
+
   --background-color: #F2F2F2;
-  --shadow-color: rgb(170, 170, 170);
+  --shadow-color: #cecece;
 
   --border-radius: 5px;
 
   --font-size-h1: 2.5em;
+  --font-size-h2: 1.3em;
+  --font-size-h3: 1.5em;
+  --font-size-p: 1em;
+  --font-size-li: 1em;
+
+  --text-color-primary: #080808;
+  --text-color-secondary: #3d3d3d;
+
+  
 }
+
 
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 
 body {
   padding: 0px;
   margin: 0px;
+  background-color: var(--background-color);
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: var(--font-size-h1);
+  color: var(--text-color);
+
+}
+
+h2 {
+  font-weight: 350;
+  font-size: var(--font-size-h2);
+  color: var(--text-color);
+
+}
+
+h3 {
+  font-weight: 600;
+  font-size: var(--font-size-h3);
+  color: var(--text-color);
+}
+
+p {
+  font-weight: 300;
+  font-size: var(--font-size-p);
+  color: var(--text-color-secondary);
+}
+
+li {
+  font-weight: 400;
+  font-size: var(--font-size-li);
+  color: var(--text-color-secondary);
 }

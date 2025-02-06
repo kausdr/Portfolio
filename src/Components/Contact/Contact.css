@@ -1,0 +1,16 @@
+.contact {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: var(--font-size-icon);
+  }
+
+  a {
+    color: var(--color-link);
+  }
+
+  li:hover a{
+    color: var(--color-link-hover);
+    transition: 0.5s;
+  }

@@ -1,0 +1,19 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--background-color);
+    border: solid 1px var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    font-size: var(--font-size-icon-tech);
+}
+
+p {
+    font-size: var(--font-size-tech);
+}

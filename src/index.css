@@ -13,15 +13,22 @@
   --shadow-color: #cecece;
 
   --border-radius: 5px;
+  --border-radius-little: 10px;
+  --border-color: #cecece;
 
   --font-size-h1: 2.5em;
   --font-size-h2: 1.3em;
   --font-size-h3: 1.5em;
   --font-size-p: 1em;
+  --font-size-tech: 1.2em;
   --font-size-li: 1em;
+  --font-size-icon: 2em;
+  --font-size-icon-tech: 1.5em;
 
   --text-color-primary: #080808;
   --text-color-secondary: #3d3d3d;
+  --color-link: #007dc5;
+  --color-link-hover: #005e94;
 
   
 }
@@ -63,6 +70,7 @@ h3 {
   font-size: var(--font-size-h3);
   color: var(--text-color);
 }
+
 
 p {
   font-weight: 300;

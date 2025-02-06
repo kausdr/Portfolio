@@ -1,0 +1,17 @@
+#iconImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#iconImg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: relative;
+    overflow: visible;
+    border-radius: var(--border-radius-little);
+}

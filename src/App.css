@@ -3,13 +3,15 @@
   max-width: 1400px;
   width: 90%;
   margin: 0 auto;
+  
+  position: relative;
   /* background-color: green; */
 }
 
 #main {
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 100px;
 }
 
 #background-container {
@@ -41,41 +43,60 @@
 #presentation {
   margin: 0 auto;
 }
+#presentation h2{
+  font-size: 2em;
+  font-weight: 400;
+  color: var(--text-color-secondary)
+}
+
 
 #technologies {
   margin-top: 100px;
 }
 
 #tech-container{
-  width: 100%;
+  width: 80%;
   display: flex;
   height: 50vh;
   justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
 }
 
-#about-me {
-  /* background-color: var(--background-color);
-  border-radius: var(--border-radius);
-  box-shadow: 0px 0px 15px var(--shadow-color); */
+#memoji-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
 }
+
+
 
 #memoji-placeholder {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
 }
 
-#svg-container  {
+.svg-container  {
   position: relative;
   width: 100%;
-  
+  display: flex;
 }
 
-#svg-container svg {
+#svg-left-container{
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+foreignObject {
+  overflow: visible;
+}
+
+svg {
+  overflow: visible;
+}
+
+.svg-container svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,7 +105,7 @@
 
 }
 
-@keyframes slideMask {
+@keyframes slideMaskLeft {
   from {
     x: -100%;
   }
@@ -94,8 +115,29 @@
 }
 
 
-.mask-rect {
-    animation: slideMask 3s ease infinite;
+.mask-rect-left {
+    animation: slideMaskLeft 3s ease infinite;
+}
+
+@keyframes slideMaskRight {
+  from {
+    x: 100%;
+  }
+  to {
+    x: -100%;
+  }
+}
+
+.mask-rect-right {
+  animation: slideMaskRight 3s ease infinite;
+}
+
+#techs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 

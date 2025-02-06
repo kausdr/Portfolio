@@ -1,9 +1,10 @@
 import Menu from "./Components/Menu/Menu";
 import Project from "./Components/Project/Project";
+import ProjectContainer from "./Components/ProjectsContainer/ProjectContainer";
 import IconTech from "./Components/Icon/IconTech";
 import Contact from "./Components/Contact/Contact";
 import Tech from "./Components/Tech/Tech";
-
+import TechContainer from "./Components/TechContainer/TechContainer";
 
 
 import ReactImg from "./assets/logos/react.svg";
@@ -22,6 +23,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import './App.css';
+
 
 function App() {
 
@@ -181,15 +183,8 @@ function App() {
 
           <div class="container">
           <div id="techs">
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
-                  <Tech></Tech>
+            <TechContainer></TechContainer>
+
             </div>
           </div>
         </section>
@@ -202,10 +197,10 @@ function App() {
                 <h2>Explore my latest works</h2>
               </div>
               <div id="projects-container">
-                <Project />
-                <Project />
-                <Project />
-                <Project />
+
+                <ProjectContainer></ProjectContainer>
+
+
               </div>
             </div>
           </div>

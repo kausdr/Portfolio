@@ -1,14 +1,18 @@
 import "./Tech.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import * as faIcons from '@fortawesome/free-brands-svg-icons';
 
-function Tech( { iconName, color } ) {
+
+function Tech( { iconName, color, name } ) {
+    const icon = faIcons[iconName];
+    
     return (
+
         <div class="main-container">
             <div id="icon">
-                <FontAwesomeIcon style={{color: "black"}} icon={faSquareGithub} />
+                <FontAwesomeIcon style={{ color: color }} icon={icon} />
             </div>
-            <p>React</p>
+            <p>{name}</p>
         </div>
     )
 }

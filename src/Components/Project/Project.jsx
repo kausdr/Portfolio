@@ -1,16 +1,13 @@
 import "./Project.css"
 
-function Project () {
+function Project ( {name, description, tech, category} ) {
     return (
         <div class="project-container">
-            <div id="cover">
-                <img src="https://placehold.jp/30/dd6699/ffffff/300x150.png?text=placeholder+image" alt="Project's cover"></img>
-                
-            </div>
             <div id="info">
                 <div id="texts">
-                    <h3>nome</h3>
-                    <p>descrição</p>
+                    <h3>{name}</h3>
+                    <p id="category">teste</p>
+                    <p>{description}</p>
                     
                 </div>
                 <div>
@@ -19,6 +16,7 @@ function Project () {
             </div>
         </div>
     )
+
 }
 
 export default Project

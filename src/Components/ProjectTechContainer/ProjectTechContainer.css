@@ -1,0 +1,8 @@
+#techProject-container {
+    width:50%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    gap: 10px;
+}

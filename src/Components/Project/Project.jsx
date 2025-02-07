@@ -1,6 +1,7 @@
 import "./Project.css"
+import ProjectTechContainer from "../ProjectTechContainer/ProjectTechContainer"
 
-function Project ( {name, description, tech, category} ) {
+function Project ( {name, description, category} ) {
     return (
         <div class="project-container">
             <div id="info">
@@ -10,8 +11,9 @@ function Project ( {name, description, tech, category} ) {
                     <p>{description}</p>
                     
                 </div>
-                <div>
-                    <p>tecnologias</p>
+                <div id="tech-list">
+                    {/* <p>tecnologiastecnologias</p> */}
+                    <ProjectTechContainer projectId={name}></ProjectTechContainer>
                 </div>
             </div>
         </div>

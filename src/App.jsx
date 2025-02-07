@@ -1,9 +1,7 @@
 import Menu from "./Components/Menu/Menu";
-import Project from "./Components/Project/Project";
 import ProjectContainer from "./Components/ProjectsContainer/ProjectContainer";
 import IconTech from "./Components/Icon/IconTech";
 import Contact from "./Components/Contact/Contact";
-import Tech from "./Components/Tech/Tech";
 import TechContainer from "./Components/TechContainer/TechContainer";
 
 
@@ -17,10 +15,6 @@ import memojiCoding from "./assets/memoji/memojiCoding.png";
 import memojiExploding from "./assets/memoji/memojiExploding.png";
 import memojiIdea from "./assets/memoji/memojiIdea.png";
 import memojiThinking from "./assets/memoji/memojiThinking.png";
-
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import './App.css';
 

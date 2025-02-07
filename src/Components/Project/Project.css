@@ -20,20 +20,21 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-}
-
-#info::before {
-    position: absolute;
-    content: '';
-    width: 50%;
-    border-top: 3px solid green;
-    border-radius: var(--border-radius-little);
+    border-top: 2px solid green;
+    border-radius: var(--border-radius);
 }
 
 #category {
     font-weight: 500;
 }
 
+#tech-list {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
 
 
 

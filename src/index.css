@@ -25,6 +25,9 @@
   --font-size-icon: 2em;
   --font-size-icon-tech: 1.5em;
 
+  --font-size-p-project: 1em;
+  --font-size-icon-tech-project: 1.5em;
+
   --text-color-primary: #080808;
   --text-color-secondary: #3d3d3d;
   --color-link: #007dc5;
@@ -70,6 +73,8 @@ h3 {
   font-size: var(--font-size-h3);
   color: var(--text-color);
 }
+
+
 
 
 p {

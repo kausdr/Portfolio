@@ -8,7 +8,7 @@ function Tech( { iconName, color, name } ) {
     
     return (
 
-        <div class="main-container">
+        <div class="main-container" style={{ color: color }}>
             <div id="icon">
                 <FontAwesomeIcon style={{ color: color }} icon={icon} />
             </div>

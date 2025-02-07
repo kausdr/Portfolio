@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 
 
-function TechContainer() {
+function TechContainer(padding, gap, fontSizeP, fontSizeIcon) {
 
     const [techs, setTechs] = useState( [] );
 

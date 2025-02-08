@@ -16,8 +16,8 @@ function Menu() {
             </div>
                 <nav id="menu" class='menu'>
                   <ul id="menu-list">
-                    <li onClick={() => scrollToSection("hero-shot")}>Quem sou eu</li>
-                    <li onClick={() => scrollToSection("projects")}>Projetos</li>
+                    <li onClick={() => scrollToSection("hero-shot")}>About me</li>
+                    <li onClick={() => scrollToSection("projects")}>Projects</li>
                   </ul>
                 </nav>
         </div>

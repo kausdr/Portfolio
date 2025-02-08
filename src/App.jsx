@@ -5,9 +5,11 @@ import Contact from "./Components/Contact/Contact";
 import TechContainer from "./Components/TechContainer/TechContainer";
 
 
+
 import ReactImg from "./assets/logos/react.svg";
 import JsImg from "./assets/logos/js.webp";
 import HtmlImg from "./assets/logos/html.webp";
+import GitHubImg from "./assets/logos/github.svg"
 
 
 import memojiStar from "./assets/memoji/memojiStar.png";
@@ -37,7 +39,7 @@ function App() {
             <div id="presentation">
               <h1>Hello, I'm Kauane.</h1>
               <h2>Front-end Developer</h2>
-              <Contact/>
+              <Contact />
 
               <IconTech customStyle={{
                 position: "absolute",
@@ -63,19 +65,18 @@ function App() {
         </section>
 
         <section id="technologies">
-          <div class="container">
+          <div id="tech-container-div" class="container">
 
             <div id="tech-container">
-              {/* <img id="techImg" src="src\assets\react.png" /> */}
               <div class="svg-container">
-                <svg width="296" height="117" viewBox="0 0 296 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1.23038C5.01822 -0.263239 31.1367 4.81506 103.465 37.0772C142.977 50.5198 151.683 51.4159 180.481 53.2083C203.518 54.6422 266.426 53.8057 295 53.2083" stroke="#C9C9C9" stroke-width="1.5" />
-                  <path d="M84 115.817C94.8739 117.002 124.673 112.973 156.878 87.3709C189.084 61.7693 238.78 65.1473 273.484 65.1473L295 65.1473" stroke="#C9C9C9" stroke-width="1.5" />
+
+                <svg width="152" height="77" viewBox="0 0 152 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 1.00761H39.6304C49.6634 1.00762 58.5927 0.207724 58.1914 15.0057C57.7901 29.8036 58.0242 40.1689 58.1914 43.5017C58.7432 54.5002 62.2046 56 80.7657 56C97.6211 56 135.278 56 152 56" stroke="#D2D2D2" stroke-width="1" />
+                  <path d="M151.5 75.5L53.8638 74.5269L22.0376 74.2097L1 74" stroke="#D2D2D2" stroke-width="1" />
                 </svg>
 
 
-
-                <svg id="svgLeft" width="296" height="117" viewBox="0 0 296 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="svgLeft" width="152" height="77" viewBox="0 0 152 77" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                   <defs>
 
@@ -94,36 +95,35 @@ function App() {
 
                   </defs>
 
-                  <path d="M1 1.23038C5.01822 -0.263239 31.1367 4.81506 103.465 37.0772C142.977 50.5198 151.683 51.4159 180.481 53.2083C203.518 54.6422 266.426 53.8057 295 53.2083" stroke="#7DA9FF" stroke-width="1.5" mask="url(#svg-gradient-mask-left)" />
-                  <path d="M84 115.817C94.8739 117.002 124.673 112.973 156.878 87.3709C189.084 61.7693 238.78 65.1473 273.484 65.1473L295 65.1473" stroke="#7DA9FF" stroke-width="1.5" mask="url(#svg-gradient-mask-left)" />
+                  <path d="M0 1.00761H39.6304C49.6634 1.00762 58.5927 0.207724 58.1914 15.0057C57.7901 29.8036 58.0242 40.1689 58.1914 43.5017C58.7432 54.5002 62.2046 56 80.7657 56C97.6211 56 135.278 56 152 56" stroke="#7DA9FF" stroke-width="1.5" mask="url(#svg-gradient-mask-left)" />
+                  <path d="M151.5 75.5L53.8638 74.5269L22.0376 74.2097L1 74" stroke="#7DA9FF" stroke-width="1.5" mask="url(#svg-gradient-mask-left)" />
 
-                  <foreignObject x="30" y="85" width="60" height="60">
+                  <foreignObject x="-20" y="-25" width="40" height="40">
+                    <IconTech customStyle={{
+                      backgroundColor: "var(--background-color)",
+                      boxShadow: "0px 0px 5px var(--shadow-color)"
+                    }}
+                      class="iconTech" src={GitHubImg} />
+                  </foreignObject>
+                  <foreignObject x="-10" y="50" width="40" height="40">
                     <IconTech customStyle={{
                       backgroundColor: "var(--background-color)",
                       boxShadow: "0px 0px 5px var(--shadow-color)"
                     }} class="iconTech" src={ReactImg} />
                   </foreignObject>
-                  <foreignObject x="-20" y="-20" width="60" height="60">
-                    <IconTech customStyle={{
-                      backgroundColor: "var(--background-color)",
-                      boxShadow: "0px 0px 5px var(--shadow-color)"
-                    }}
-                      class="iconTech" src={HtmlImg} />
-                  </foreignObject>
+                  
                 </svg>
-
-
               </div>
 
 
               <div id="memoji-container">
                 <div id="memoji-placeholder">
-                <IconTech customStyle={{
-                      backgroundColor: "var(--background-color)",
-                      boxShadow: "0px 0px 5px var(--shadow-color)",
-                      zIndex: "2",
-                    }}
-                      class="iconTech" src={memojiExploding} />
+                  <IconTech customStyle={{
+                    backgroundColor: "var(--background-color)",
+                    boxShadow: "0px 0px 5px var(--shadow-color)",
+                    zIndex: "2",
+                  }}
+                    class="iconTech" src={memojiExploding} />
                 </div>
               </div>
 
@@ -131,15 +131,16 @@ function App() {
 
                 {/*svg 1*/}
 
-                <svg width="217" height="55" viewBox="0 25 300 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M216 1.02699C211.091 0.717202 196.365 2.94765 176.731 14.3477C152.187 28.5977 126.662 44.0869 93.2831 49.9728C73.6484 53.4351 68.1507 52.7609 0.999998 54" stroke="#C9C9C9" stroke-width="1.5" />
+                <svg width="152" height="57" viewBox="0 0 152 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M152 1.00762H112.37C102.337 1.00762 93.4073 0.207726 93.8086 15.0057C94.2099 29.8036 93.9758 40.1689 93.8086 43.5017C93.2568 54.5002 89.7954 56 71.2343 56C54.3789 56 16.7217 56 3.15905e-06 56" stroke="#D2D2D2" stroke-width="1" />
                 </svg>
+
 
                 {/*svg 2*/}
 
-                <svg id="svgRight" width="217" height="55" viewBox="0 25 300 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="svgRight" width="152" height="57" viewBox="0 0 152 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                  <defs>
+                <defs>
 
                     <linearGradient id="svg-gradient-right" >
                       <stop offset="0" stopColor="white" stop-opacity="0" />
@@ -156,9 +157,9 @@ function App() {
 
                   </defs>
 
-                  <path d="M216 1.02699C211.091 0.717202 196.365 2.94765 176.731 14.3477C152.187 28.5977 126.662 44.0869 93.2831 49.9728C73.6484 53.4351 68.1507 52.7609 0.999998 54" stroke="#7DA9FF" stroke-width="1.5" mask="url(#svg-gradient-mask-right)" />
+                  <path d="M152 1.00762H112.37C102.337 1.00762 93.4073 0.207726 93.8086 15.0057C94.2099 29.8036 93.9758 40.1689 93.8086 43.5017C93.2568 54.5002 89.7954 56 71.2343 56C54.3789 56 16.7217 56 3.15905e-06 56" stroke="#7DA9FF" stroke-width="1.5" mask="url(#svg-gradient-mask-right)" />
 
-                  <foreignObject x="190" y="-25" width="60" height="60">
+                  <foreignObject x="120" y="-25" width="40" height="40">
                     <IconTech customStyle={{
                       backgroundColor: "var(--background-color)",
                       boxShadow: "0px 0px 5px var(--shadow-color)"
@@ -166,9 +167,16 @@ function App() {
                       class="iconTech" src={JsImg} />
                   </foreignObject>
                 </svg>
+              </div>
+            </div>
 
-
-
+            <div id="about-me">
+              <div id="about-me-text">
+                <p>
+                  Hi, I'm Kauane. I am a Front-end and IOS developer and I'm passionate about technology.
+                </p>
+                <p>I am currently studying Information Systems at PUCPR.</p>
+                <p>And here you'll find my greatest projects!</p>
               </div>
             </div>
 
@@ -176,8 +184,8 @@ function App() {
           </div>
 
           <div class="container">
-          <div id="techs">
-            <TechContainer></TechContainer>
+            <div id="techs">
+              <TechContainer></TechContainer>
 
             </div>
           </div>
@@ -203,7 +211,14 @@ function App() {
         <footer>
           <div class="container">
             <div id="footer-container">
-              <p>Isso aqui é um footer, descobrirei mais tarde.</p>
+              <div id="footer-text">
+                <p>Portfolio made by Kauane using React Js</p>
+              </div>
+
+              <div id="pic-footer">
+                <img src={memojiStar} alt="Website's logo"></img>
+              </div>
+              <Contact></Contact>
             </div>
           </div>
         </footer>

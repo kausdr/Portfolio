@@ -5,6 +5,19 @@
     height: 300px;
     text-align: left;
     justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.project-container h3{
+    color: var(--text-color-primary)
+}
+
+
+.project-container:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 
 #texts {
@@ -20,12 +33,13 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    border-top: 2px solid green;
+    border-top: 2px solid var(--color-link);
     border-radius: var(--border-radius);
 }
 
 #category {
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--text-color-terciary);
 }
 
 #tech-list {

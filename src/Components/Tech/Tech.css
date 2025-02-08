@@ -14,6 +14,8 @@
     font-size: var(--font-size-icon-tech);
 }
 
-p {
+#techName {
     font-size: var(--font-size-tech);
+    font-family: "Open Sans", serif;
+    color: var(--text-color-primary);
 }

@@ -1,6 +1,5 @@
 .main-container-techProject{
     background-color: var(--background-color);
-    border: solid 1px var(--border-color);
     border-radius: var(--border-radius);
     padding: 0px 4px;
     font-size: var(--font-size-icon-tech);

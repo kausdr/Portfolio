@@ -11,7 +11,7 @@ function ProjectContainer() {
 
     useEffect( () => {
         const fetchProjects = async () => {
-            const projectCollectionRef = collection( db, "Projetos" )
+            const projectCollectionRef = collection( db, "Projects" )
 
             const data = await getDocs( projectCollectionRef );
             setProjects( data.docs.map( ( doc ) => ( { ...doc.data(), id: doc.id } ) ) );
@@ -27,7 +27,7 @@ function ProjectContainer() {
             {projects.map((project) => {
                 return(
                     <div>
-                        <Project name={project.id} description={project.description} category={project.category} ></Project>
+                        <Project name={project.id} description={project.description} category={project.category} link={project.link}></Project>
                     </div>
                 )
             }

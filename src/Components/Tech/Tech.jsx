@@ -12,7 +12,7 @@ function Tech( { iconName, color, name } ) {
             <div id="icon">
                 <FontAwesomeIcon style={{ color: color }} icon={icon} />
             </div>
-            <p>{name}</p>
+            <p id="techName">{name}</p>
         </div>
     )
 }

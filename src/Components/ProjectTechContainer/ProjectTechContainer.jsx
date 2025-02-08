@@ -19,7 +19,7 @@ function ProjectTechContainer( {projectId} ) {
 
             try {
                 console.log(`Buscando tecnologias para o projeto: ${projectId}`);
-                const projectRef  = doc(db, "Projetos", projectId );
+                const projectRef  = doc(db, "Projects", projectId );
                 const projectSnap = await getDoc(projectRef );
 
                 if (projectSnap.exists()) {

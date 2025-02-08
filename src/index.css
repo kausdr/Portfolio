@@ -19,9 +19,9 @@
   --font-size-h1: 2.5em;
   --font-size-h2: 1.3em;
   --font-size-h3: 1.5em;
-  --font-size-p: 1em;
+  --font-size-p: 1.2em;
   --font-size-tech: 1.2em;
-  --font-size-li: 1em;
+  --font-size-li: 1.1em;
   --font-size-icon: 2em;
   --font-size-icon-tech: 1.5em;
 
@@ -29,9 +29,11 @@
   --font-size-icon-tech-project: 1.5em;
 
   --text-color-primary: #080808;
-  --text-color-secondary: #3d3d3d;
-  --color-link: #007dc5;
-  --color-link-hover: #005e94;
+  --text-color-secondary: #707070;
+  --text-color-terciary: #5f5f5f;
+
+  --color-link: #5C6BC0;
+  --color-link-hover: #475294;
 
   
 }
@@ -64,7 +66,7 @@ h1 {
 h2 {
   font-weight: 350;
   font-size: var(--font-size-h2);
-  color: var(--text-color);
+  color: var(--text-color-primary);
 
 }
 
@@ -78,7 +80,8 @@ h3 {
 
 
 p {
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Open Sans", serif;
   font-size: var(--font-size-p);
   color: var(--text-color-secondary);
 }
